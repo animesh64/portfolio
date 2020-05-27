@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+ 
+
   // sticky navigation menu
 
   let nav_offset_top = $('.header_area').height();
@@ -38,6 +40,29 @@ $(window).on('load',function(){
   }, 2000);
       });
 
+    
+    
+      // on clicking downloadcv btn
+    $('#resume').click(() => {
+      
+      const file_path = '../AnimeshChourasia_resume.pdf';
+      const a = document.createElement('A');
+      a.href = file_path;
+      a.download = file_path.substr(file_path.lastIndexOf('/') + 1);
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+  })
+  $('#cv').click(() => {
+      
+    const file_path = '../AnimeshChourasia_resume.pdf';
+    const a = document.createElement('A');
+    a.href = file_path;
+    a.download = file_path.substr(file_path.lastIndexOf('/') + 1);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+})
 
 
 
@@ -69,23 +94,5 @@ $(window).on('load',function(){
     });
   }
 
- 
-
 })(jQuery);
- // autoscroll animation
- $('.smoothscroll').click(function (e) {
-  e.preventDefault();
-  var target = $($(this).attr('data-href'));
-  $('html,body').stop().animate({
-      scrollTop: target.offset().top - 110
-  }, 'linear');
-});
-if (location.hash) {
-  var id = $(location.hash);
-}
-$(window).on('load', function () {
-  if (location.hash) {
-      $('html,body').animate({ scrollTop: id.offset().top - 100 }, 'swing')
-  };
-});
 
