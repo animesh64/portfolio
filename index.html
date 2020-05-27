@@ -13,7 +13,9 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
+    
    
 </head>
 <body>
@@ -71,27 +73,26 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
          
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+                <span><i class="fas fa-bars fa-1x"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mr-auto"></div>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav flex-row d-md-flex">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll smoothscroll active" data-href="#home" href="#home">home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll" href="#home">home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll smoothscroll" data-href="#about" href="#about">about</a>
+                        <a class="nav-link js-scroll" href="#about">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll smoothscroll" data-href="#resume" href="#resume">resume</a>
+                        <a class="nav-link js-scroll" href="#resume">resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll smoothscroll" data-href="#projects" href="#projects">projects</a>
+                        <a class="nav-link js-scroll" href="#projects">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll smoothscroll" data-href="#contact" href="#contact">contact</a>
+                        <a class="nav-link js-scroll" href="#contact">contact</a>
                     </li>
                    
                 </ul>
@@ -110,16 +111,17 @@
     <section class="site-banner" id="home">
         <div class="container">
             <div class="row">
+              
                 <div class="col-lg-6 col-md-12 site-title">
                     <h3 class="title-text">Hey</h3>
                     <h1 class="title-text text-uppercase rainbow-text">I am Animesh</h1>
                     <h4 class="title-text text-uppercase">I am a <span class="typed" data-typed-items="Student,Web Developer,Software Developer,AI Engineer,Competitive Programmer"></span></h4>
                     <div class="social-links">
-                        <a href="#" class="github"><i class="bx bxl-github bx-sm"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook bx-sm"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram bx-sm"></i></a>
-                        <a href="#" class="google-plus"><i class='bx bxl-google-plus-circle bx-sm'></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin bx-sm"></i></a>
+                        <a href="https://github.com/animesh64" class="github"><i class="bx bxl-github bx-sm"></i></a>
+                        <a href="https://www.facebook.com/animesh.chourasia.64" class="facebook"><i class="bx bxl-facebook bx-sm"></i></a>
+                        <a href="https://www.instagram.com/animesh__chourasia/" class="instagram"><i class="bx bxl-instagram bx-sm"></i></a>
+                       
+                        <a href="www.linkedin.com/in/animesh-chourasia-042767b1" class="linkedin"><i class="bx bxl-linkedin bx-sm"></i></a>
                       </div>
                       <br>  <br> 
                     <div class="site-buttons">
@@ -127,7 +129,7 @@
                             <a type="button" class="btn button primary-button mr-4 text-uppercase" data-href="#contact" href="#contact">Contact me
 
                             </a>
-                            <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                            <button type="button" class="btn button secondary-button text-uppercase" id="resume" >Get cv</button>
                         </div>
                     </div>
                 </div>
@@ -145,14 +147,14 @@
       <!--  ========================= About Area ==========================  -->
 
       <section class="about-area" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
+        <div class="container">
+            <div class="row"><br><br>
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-image">
-                        <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        <img src="img/about-img.jpg" alt="About">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 about-title">
+                <div class="col-lg-6 col-md-12 col-sm-12 about-title">
                     <h2 class="text-uppercase pt-5">
                         <span>Let me</span>
                         <span>introduce</span>
@@ -169,7 +171,7 @@
                             
                         </p>
                     </div>
-                    <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                    <button type="button" class="btn button primary-button text-uppercase" id="cv" >Download cv</button>
                 </div>
             </div>
         </div>
@@ -184,7 +186,7 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2 class="text-center">Resume</h2>
+            <h2 class="text-center"><br>Resume</h2>
             <div class="underline"></div>
             <br>
             <p></p>
@@ -272,7 +274,7 @@
   
 
 
- <section id="skills" class="services-mf pt-5 route">
+ <section id="skills">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -289,7 +291,7 @@
       </div>
       <br>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-monitor"></i></span>
@@ -309,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-code-working"></i></span>
@@ -331,7 +333,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class='bx bx-code-curly bx-lg'></i></span>
@@ -353,7 +355,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
@@ -375,7 +377,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="bx bxl-android bx-lg"></i></span>
@@ -395,7 +397,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skills-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="fas fa-database"></i></span>
@@ -416,7 +418,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skills-box">
               <div class="service-ico">
                 <span class="ico-circle"><i class='bx bx-chip'></i></span>
@@ -439,7 +441,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skills-box">
               <div class="service-ico">
                 
@@ -466,54 +468,56 @@
 
   <section id="projects">
     <div class="container">
+      <br><br><br>
         <h3 class="project-title text-uppercase text-center">Projects</h3>
         <div class="line-mf"></div>
         <br>
         <br>
         <div class="row">
        
-        <div class="col-lg-6 col-sm-12">
-          <div class="card" style="width: 31rem;">
+        <div class="col-lg-6 col-md-6 col-sm-12
+        ">
+          <div class="card">
             <img src="img/preview.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Student Enquiry System</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
+              <p class="card-text">A fully responsive and dynamic website.</p>
+              <a href="https://github.com/animesh64/student_enquiry" class="btn btn-outline-info btn-sm">Code<></a>
             </div>
           </div>
           </div>
         
-        <div class="col-lg-6 col-sm-12">
-            <div class="card" style="width: 31rem;">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card" >
               <img src="img/android-project.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Coin Collector</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
+                <p class="card-text">A basic and fun to play android game</p>
+                <a href="https://github.com/animesh64/coincollector" class="btn btn-outline-info btn-sm">Code<></a>
               </div>
             </div>
             </div>
           </div>
 <br>
 <br>          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div class="card" style="width: 31rem;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card">
                 <img src="img/catvsdog.gif" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Cat vs Dog Classifier</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">A Cat vs Dog Image Classifier using Deep Learning</p>
                   <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
                 </div>
               </div>
               </div>
             
-            <div class="col-lg-6 col-sm-12">
-                <div class="card" style="width: 31rem;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
                   <img src="img/emojinator.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Emojinator</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
+                    <p class="card-text">A classfier which classify recognize different hand emojis</p>
+                    <a href="https://github.com/animesh64/emojinator-project" class="btn btn-outline-info btn-sm">Code<></a>
                   </div>
                 </div>
                 </div>
@@ -521,23 +525,23 @@
 
               <br>
 <br>          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div class="card" style="width: 31rem;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card">
                 <img src="img/mnist.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Mnist Image Classification</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">An integer digit classifier</p>
                   <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
                 </div>
               </div>
               </div>
             
-            <div class="col-lg-6 col-sm-12">
-                <div class="card" style="width: 31rem;">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
                   <img src="img/preview.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title.</p>
                     <a href="#" class="btn btn-outline-info btn-sm">Go somewhere</a>
                   </div>
                 </div>
@@ -557,7 +561,7 @@
    <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
-     
+     <br><br><br>
         <h2>Contact Me</h2>
      
       <div class="line-mf"></div>
@@ -590,7 +594,7 @@
 
         <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form action="contact.jsp" method="post" role="form" class="php-email-form">
+          <form action="mailto:animeshchourasia64@gmail.com" method="post" role="form" class="php-email-form">
             <div class="form-row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -636,10 +640,10 @@
      
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.facebook.com/animesh.chourasia.64" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/animesh__chourasia/" class="instagram"><i class="bx bxl-instagram"></i></a>
         
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="www.linkedin.com/in/animesh-chourasia-042767b1" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright: <strong><span>Animesh Chourasia</span></strong>. All Rights Reserved
